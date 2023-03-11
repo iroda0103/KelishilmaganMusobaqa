@@ -11,6 +11,7 @@
                   font-weight: 600;
                   font-size: 50px;
                   line-height: 64px;
+                  color: var(--color) !important;
             }
 
             .info-text {
@@ -18,7 +19,7 @@
                   font-size: 18px;
                   line-height: 140%;
                   margin-top: 20px;
-                  color:red;
+                  color:var(--colorInfo) !important;
             }
 
             .info-text:last-child {
@@ -48,6 +49,7 @@
                         font-size: 20px;
                         line-height: 26px;
                         text-align: center;
+                        color: var(--color) !important;
                   }
             }
       }
