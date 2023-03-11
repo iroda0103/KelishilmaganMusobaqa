@@ -11,7 +11,6 @@
                   font-weight: 600;
                   font-size: 50px;
                   line-height: 64px;
-                  // color: #000;
             }
 
             .info-text {
@@ -19,7 +18,7 @@
                   font-size: 18px;
                   line-height: 140%;
                   margin-top: 20px;
-                  // color: rgba(0, 0, 0, 0.8);
+                  color:red;
             }
 
             .info-text:last-child {
@@ -42,7 +41,6 @@
                         font-size: 50px;
                         line-height: 100%;
                         color: blue;
-                        // text-decoration-color: linear-gradient(109.09deg, rgba(0, 40, 248, 0.89) 0%, #6911AD 100%);
                   }
 
                   .info-card__text {
@@ -50,7 +48,6 @@
                         font-size: 20px;
                         line-height: 26px;
                         text-align: center;
-                        color: #000000;
                   }
             }
       }
