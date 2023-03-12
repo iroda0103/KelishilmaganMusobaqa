@@ -1,5 +1,6 @@
 :root {
   --color:#fff;
+  --colorInfo:rgba(255, 255, 255, 0.8);
   --backgroundHeader:rgba(23, 25, 29, 0.7);
   --backgrounBody:#111317;
 }
@@ -37,6 +38,7 @@ body {
 }
 .lighted {
   --color:#000;
+  --colorInfo: rgba(0, 0, 0, 0.8);
   --backgroundHeader: rgba(23, 25, 29, 0.1);
   --backgrounBody:#FFF;
 }
@@ -147,13 +149,14 @@ button {
   font-weight: 600;
   font-size: 50px;
   line-height: 64px;
+  color: var(--color) !important;
 }
 .info .info-left .info-text {
   font-weight: 400;
   font-size: 18px;
   line-height: 140%;
   margin-top: 20px;
-  color: red;
+  color: var(--colorInfo) !important;
 }
 .info .info-left .info-text:last-child {
   margin-top: 30px;
@@ -180,6 +183,7 @@ button {
   font-size: 20px;
   line-height: 26px;
   text-align: center;
+  color: var(--color) !important;
 }
 
 @media only screen and (max-width: 1250px) {
