@@ -1,0 +1,118 @@
+main {
+    z-index: 10000;
+    overflow: hidden;
+    padding-top: 139px;
+    padding-bottom: 120px;
+}
+
+.gradiyent {
+
+    img {
+        width: 1237.6px;
+        position: absolute;
+        left: 0.32px;
+        top: 45px;
+        filter: blur(75px);
+        transform: rotate(15.64deg);
+        z-index: -1;
+    }
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.hero__text {
+    margin-right: 165px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.hero--header {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+    max-width: 695px;
+    width: 100%;
+}
+
+.hero--paragraph {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    max-width: 549px;
+    width: 100%;
+}
+
+.hero--circle {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.btn-hero {
+    margin-top: 20px;
+    position: relative;
+}
+
+.image-elips {
+    position: absolute;
+    width: 514.82px;
+    height: 657.4px;
+    right: 0;
+top: -465px;
+    background: linear-gradient(105.05deg, #267DFF 1.69%, #ED0080 48.42%, #00FFE0 85.83%);
+    opacity: 0.4;
+    filter: blur(100px);
+    transform: rotate(-154.36deg);
+  
+}
+.midel{
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    background-color: #6911AD;
+    position: relative;
+    overflow: hidden;
+    &:hover{
+       transition: width 0.3s ease;
+       width: 140px;
+    }
+}
+
+.midel-text{
+    position: relative;
+    left: 39px;
+    color: #fff;
+    top: 32px;
+    cursor: pointer;
+}
+.md-2{
+    z-index: -1;
+    color: #6911AD;
+    position: absolute;
+   
+}
+// .midel-text::before{
+//     content: 'Портфолио ';
+//     text-align: right;
+//     display: flex;align-items: center;
+//     justify-content: flex-end;
+//     color: black;
+//     width: 70px;
+//     height: 70px;
+//     border-radius: 50%;
+//     position: absolute;
+//     top: -30px;
+//     left: -40px;
+//     background-color: red;
+// }

@@ -29,6 +29,7 @@ header {
     font-weight: 500;
     font-size: 30px;
     line-height: 50px;
+    margin-right: 10px;
 }
 
 .header_qoshimcha {
@@ -46,6 +47,7 @@ header {
         font-weight: 700;
         font-size: 14px;
         line-height: 17px;
+
         &:nth-child(1) {
             font-size: 20px;
             line-height: 24px;
@@ -59,10 +61,10 @@ button {
     color: #fff;
     padding: 12px 21px 14px 21px;
     font-family: 'Proxima Nova';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 19px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
 }
 
 .darcmode {
@@ -73,6 +75,9 @@ line-height: 19px;
     border: 1px solid #AAAAAA;
     border-radius: 40px;
 
+  
+}
+.header_qoshimcha{
     span {
         padding: 6px;
         border-radius: 40px;
@@ -81,5 +86,71 @@ line-height: 19px;
         &:nth-child(2) {
             padding: 6.74px 6.64px 6.76px 7.75px;
         }
+    }
+}
+
+.mobile-icon--span {
+    width: 18px;
+    height: 3px;
+    background: var(--color);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    &:nth-child(2){
+        width: 24px;
+    }
+    &:nth-child(3){
+        width: 14px;
+        position: relative;
+        left: 10px;
+    }
+}
+.logo-mobile{
+    font-family: 'Banana Brick';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+width: 89px;
+height: 39px;
+}
+.d-none{
+    display: none;
+}
+.mobile-icon{
+    display: none;
+}
+@media only screen and (max-width:1200px){
+    .header--phone{
+        display: none;
+    }
+    .darcmode{
+        margin-right: 30px;
+    }
+}
+@media only screen and (max-width:950px){
+    nav{
+        display: none;
+    }
+    .mobile-icon{
+        display: block;
+    }
+}
+@media only screen and (max-width:840px) {
+    .zakas-btn{
+        display: none;
+    }
+    .darcmode{
+        margin-right: 0;
+    }
+}
+@media only screen and (max-width:400px){
+    .darcmode{
+        display: none;
+    }
+    .mobile-darc{
+        display: block;
     }
 }
