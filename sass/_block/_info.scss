@@ -18,7 +18,10 @@
                   font-size: 18px;
                   line-height: 140%;
                   margin-top: 20px;
-                  color:red;
+                  color: rgba(0, 0, 0, 0.8);
+            }
+            .info-text__night{
+                  color: var(--color);
             }
 
             .info-text:last-child {
