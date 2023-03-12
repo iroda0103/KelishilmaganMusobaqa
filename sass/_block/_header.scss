@@ -148,7 +148,7 @@ height: 39px;
 }
 @media only screen and (max-width:400px){
     .darcmode{
-        display: none;
+        display: none !important;
     }
     .mobile-darc{
         display: block;
