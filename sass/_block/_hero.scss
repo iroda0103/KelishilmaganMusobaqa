@@ -53,12 +53,26 @@ main {
 }
 
 .hero--circle {
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
+   display:flex;
+   align-items:center;
+   justify-content:center;
     z-index: 10;
 }
-
+.d-n-c{
+    display: none;
+}
+#cobe{
+    width: 500px;
+    height: 500px;
+}
+#cobe2{
+    width: 238px;
+    height: 238px;
+}
+#cobe3{
+    width: 380px;
+    height: 380px;
+}
 .btn-hero {
     margin-top: 20px;
     position: relative;
@@ -69,39 +83,116 @@ main {
     width: 514.82px;
     height: 657.4px;
     right: 0;
-top: -465px;
+    top: -465px;
     background: linear-gradient(105.05deg, #267DFF 1.69%, #ED0080 48.42%, #00FFE0 85.83%);
     opacity: 0.4;
     filter: blur(100px);
     transform: rotate(-154.36deg);
-  
+
 }
-.midel{
+
+.midel {
     width: 70px;
     height: 70px;
     border-radius: 35px;
     background-color: #6911AD;
     position: relative;
     overflow: hidden;
-    &:hover{
-       transition: width 0.3s ease;
-       width: 140px;
+
+    &:hover {
+        transition: width 0.3s ease;
+        width: 140px;
     }
 }
 
-.midel-text{
+.midel-text {
     position: relative;
     left: 39px;
     color: #fff;
     top: 32px;
     cursor: pointer;
 }
-.md-2{
+
+.md-2 {
     z-index: -1;
     color: #6911AD;
     position: absolute;
-   
+
 }
+
+
+
+@media only screen and (max-width:1330px) {
+    .hero__text {
+        margin-right: 40px;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    main{
+        padding-top: 60px;
+    }
+    .hero-container {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .hero__text{
+        margin: 0 auto;
+    }
+    .hero--header{
+        text-align: center;
+    }
+    .hero--paragraph{
+        text-align: center;
+    }
+  
+}
+@media only screen and (max-width:800px) {
+    main{
+        padding-top: 30px;
+    }
+    #cobe3{
+        display: block;
+    }
+    #cobe{
+        display: none;
+    }
+    .hero__text{
+        margin: 0 auto;
+    }
+        .hero--header {
+            font-size: 40px;
+            line-height: 48px;
+        }
+    
+        .hero--paragraph {
+            font-size: 17px;
+            line-height: 20px;
+        } 
+}
+@media only screen and (max-width:400px) {
+    #cobe3 {
+        display: none;
+    }
+    #cobe2{
+display: block;
+    }
+.hero__text{
+    margin: 0 auto;
+}
+    .hero--header {
+        max-width: 293px;
+        font-size: 32px;
+        line-height: 35px;
+    }
+
+    .hero--paragraph {
+        max-width: 293px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+
 // .midel-text::before{
 //     content: 'Портфолио ';
 //     text-align: right;

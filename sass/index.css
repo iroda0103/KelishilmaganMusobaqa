@@ -403,10 +403,29 @@ main {
 }
 
 .hero--circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.d-n-c {
+  display: none;
+}
+
+#cobe {
   width: 500px;
   height: 500px;
-  border-radius: 50%;
-  z-index: 10;
+}
+
+#cobe2 {
+  width: 238px;
+  height: 238px;
+}
+
+#cobe3 {
+  width: 380px;
+  height: 380px;
 }
 
 .btn-hero {
@@ -453,6 +472,72 @@ main {
   position: absolute;
 }
 
+@media only screen and (max-width: 1330px) {
+  .hero__text {
+    margin-right: 40px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  main {
+    padding-top: 60px;
+  }
+  .hero-container {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  .hero__text {
+    margin: 0 auto;
+  }
+  .hero--header {
+    text-align: center;
+  }
+  .hero--paragraph {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 800px) {
+  main {
+    padding-top: 30px;
+  }
+  #cobe3 {
+    display: block;
+  }
+  #cobe {
+    display: none;
+  }
+  .hero__text {
+    margin: 0 auto;
+  }
+  .hero--header {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .hero--paragraph {
+    font-size: 17px;
+    line-height: 20px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #cobe3 {
+    display: none;
+  }
+  #cobe2 {
+    display: block;
+  }
+  .hero__text {
+    margin: 0 auto;
+  }
+  .hero--header {
+    max-width: 293px;
+    font-size: 32px;
+    line-height: 35px;
+  }
+  .hero--paragraph {
+    max-width: 293px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
 .info {
   display: flex;
   flex-wrap: wrap;

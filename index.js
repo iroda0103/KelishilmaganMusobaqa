@@ -31,9 +31,6 @@ function darc() {
     moons.classList.add('d-none')
     document.body.classList.remove('lighted');
 }
-moon.addEventListener('click', () => {
-    darc()
-})
 sun.addEventListener('click', () => {
     ligth()
 })
@@ -84,4 +81,7 @@ infoText_1.classList.toggle("info-text__night")
 for (let i = 0; i < afzallikCard.length; i++) {
     afzallikCard[i].classList.toggle("afzallik-card__light")
 }
+
+
+
 
